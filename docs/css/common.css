@@ -1,0 +1,33 @@
+@charset "UTF-8";
+html{
+    font-family: sans-serif;
+}
+body {
+    
+    
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-weight: normal;
+}
+a:link{
+    color: #00ff00;
+}
+a:visited{
+    color:#c000ff;
+}
+a:hover{
+    color:#00ffff;
+}
+a:active{
+    color:blue;
+}
+.entire {
+    color: #f0f0f0;
+    background-color: #242424;
+    margin: 40px auto;
+    border: 40px solid #242424;
+    width: 1000px;
+}
+

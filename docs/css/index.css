@@ -1,0 +1,10 @@
+@import url("common.css");
+#updateTable{
+    color: black;
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    margin : 0px;
+	padding : 0px;
+    overflow: scroll;
+}
