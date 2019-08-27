@@ -1,7 +1,7 @@
 @import url("common.css");
 #updateTable{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     width: 1000px;
     height: 200px;
     margin : 0px;

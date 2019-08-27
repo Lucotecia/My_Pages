@@ -1,33 +1,39 @@
 @charset "UTF-8";
-html{
+html {
     font-family: sans-serif;
 }
 body {
-    
-    
+    background-color: black;
     margin: 0px;
     padding: 0px;
 }
-h1{
+h1 {
     font-weight: normal;
 }
-a:link{
+p {
+    margin: 20px;
+}
+footer {
+    text-align: center;
+}
+a:link {
     color: #00ff00;
 }
-a:visited{
+a:visited {
     color:#c000ff;
 }
-a:hover{
+a:hover {
     color:#00ffff;
 }
-a:active{
+a:active {
     color:blue;
 }
 .entire {
     color: #f0f0f0;
-    background-color: #242424;
+    background-color: #303030;
     margin: 40px auto;
-    border: 40px solid #242424;
+    border: 40px solid #303030;
+    border-radius: 20px;
     width: 1000px;
 }
 
