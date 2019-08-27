@@ -8,8 +8,10 @@
     overflow: scroll;
 }
 th {
+    color: #f0f0f0;
     text-align: left;
 }
 td {
+    color: #f0f0f0;
     border-left: 50px solid #303030; 
 }
