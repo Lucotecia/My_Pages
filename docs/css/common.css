@@ -32,8 +32,8 @@ a:active {
     color: #f0f0f0;
     background-color: #303030;
     margin: 40px auto;
-    border: 40px solid #303030;
-    border-radius: 10px;
+    border-radius: 35px;
+    border: 30px solid #303030;
     width: 1000px;
 }
 

@@ -17,4 +17,6 @@ td {
 }
 #titleImage img {
     width: 1000px;/*heightを指定せず縦横比を維持*/
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
