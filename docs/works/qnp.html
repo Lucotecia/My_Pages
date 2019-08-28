@@ -14,13 +14,25 @@
         <div class="entire">
             <main>
                 <h1>Quick Number Place</h1>
-                <h2>DEMO</h2>
+                <h2>INDEX</h2>
+                    <h3>
+                        <ul>
+                            <li><a href="#demo">DEMO</a></li>
+                            <li><a href="#archives">ARCHIVES</a></li>
+                            <li><a href="#rules">GAME RULES</a></li>
+                            <li><a href="#usage">USAGE</a></li>
+                            <li><a href="#updates">UPDATES</a></li>
+                            <li><a href="#algorithm">ALGORITHM</a></li>
+                            <li><a href="#source">SOURCE</a></li>
+                        </ul>
+                    </h3>
+                <h2 id="demo">DEMO</h2>
                 <img src="images/qnp1.gif" id="qnpgif">
-                <h2>UPDATE</h2>
+                <h2 id="archives">ARCHIVES</h2><!--アップデートしたらworks/index.htmlも編集すること-->
                 <div class="updateTable">
                     2019/08/28 <a href="https://github.com/Lucotecia/Quick_Number_Place/releases/download/v1.0/Quick_Number_Place_v1.0.zip">v1.0 for windows</a>をこのページで公開<br>
                 </div>
-                <h2>RULE</h2>
+                <h2 id="rules">GAME RULES</h2>
                 <p>
                     数独のルールは至ってシンプルです。
                     数独の盤面は9×9マスの格子からなり、通常は3×3マスのブロックが3×3個正方形に並んだ形となっています。
@@ -28,7 +40,7 @@
                     通常は20～30個程度のマスが既に埋められており、これをヒントとしてすべてのマスを埋めるのがこのゲームです。
                     傾向としてはヒントは少ない方が難しくなりますが、例外もよくあるようです。
                 </p>
-                <h2>USAGE</h2>
+                <h2 id="usage">USAGE</h2>
                 <p>
                     ダウンロードしたら、まずzipファイルを解凍して適当な場所に保存し、README_日本語.txtをお読みください。<br>
                     操作方法は、基本的にマスをクリックし、選択したマスの番号をキーボードから打ち込むことになります。<br>
@@ -36,7 +48,7 @@
                     スペースキーで中央のマスを選択し、矢印キーで選択するマスを変更することも可能です。<br>
                     その他ショートカットキーは本体のボタン等に記載してあります。<br>
                 </p>
-                <h2>VERSION</h2>
+                <h2 id="updates">UPDATES</h2>
                 <h3>v1.0</h3>
                 <p>
                     最初のpublic releaseとなります。<br>
@@ -44,7 +56,7 @@
                     また、無制限のUndo/Redo機能や、初心者に嬉しい重複を許さない範囲のハイライト機能も実装しました。<br>
                     ベストタイムの保存は、レジストリを汚したくないとの思いと、QtとJSON、iniファイル周りの私の理解不足のため実装できていません。<br>
                 </p>
-                <h2>ALGORITHM</h2>
+                <h2 id="updates">ALGORITHM</h2>
                 <p>
                     以下のようなラスベガス法の一種ともいえそうな確率的アルゴリズムを用いています。<br>
                     &nbsp;1.まず乱数とバックトラッキング(深さ優先探索)を用いて完成した盤面を生成する<br>
@@ -56,7 +68,7 @@
                     これはこのアルゴリズムの深刻な課題なので、今後マルチスレッドを用いて気にならない程度に生成時間を削ることを目標とします。<br>
                     (人工知能で一瞬で生成してしまう技術もあるようですが、AIに関して勉強不足な上、そもそもナンバープレース作りを通してQtやC++を勉強したかったというのがあります)
                 </p>
-                <h2>SOURCE</h2>
+                <h2 id="source">SOURCE</h2>
                 <p><a href="https://github.com/Lucotecia/Quick_Number_Place/">GitHub</a>にあります。</p>
             </main>
             <footer>
