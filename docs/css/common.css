@@ -13,6 +13,9 @@ h1 {
 h2 {
     font-weight: normal;
 }
+h3 {
+    font-weight: normal;
+}
 p {
     margin: 20px;
 }
@@ -39,11 +42,14 @@ a:active {
     border: 30px solid #303030;
     width: 1000px;
 }
-.updateTable{
+.updateTable {
     background-color: black;
     width: 1000px;
     height: 150px;
     margin : 0px;
 	padding : 10px;
     overflow: scroll;
+}
+.enumeration {
+    margin: 40px;
 }
