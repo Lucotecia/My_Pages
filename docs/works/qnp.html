@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
+        <meta name="format-detection" content="telephone=no, email=no, address=no">
+        <title>Quick Number Place - Lucotecia's Room</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="css/qnp.css">
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="entire">
+            <main>
+                <h1>Quick Number Place</h1>
+                <h2>DEMO</h2>
+                <img src="images/qnp1.gif" id="qnpgif">
+                <h2>UPDATE</h2>
+                <div class="updateTable">
+                    2019/08/28 <a href="https://github.com/Lucotecia/Quick_Number_Place/releases/download/v1.0/Quick_Number_Place_v1.0.zip">v1.0 for windows</a>をこのページで公開<br>
+                </div>
+                <h2>RULE</h2>
+                <p>
+                    数独のルールは至ってシンプルです。
+                    数独の盤面は9×9マスの格子からなり、通常は3×3マスのブロックが3×3個正方形に並んだ形となっています。
+                    プレイヤーは1から9までの整数でマスを埋めますが、この時縦、横、ブロック内で重複が生じてはなりません。
+                    通常は20～30個程度のマスが既に埋められており、これをヒントとしてすべてのマスを埋めるのがこのゲームです。
+                    傾向としてはヒントは少ない方が難しくなりますが、例外もよくあるようです。
+                </p>
+                <h2>USAGE</h2>
+                <p>
+                    ダウンロードしたら、まずzipファイルを解凍して適当な場所に保存し、README_日本語.txtをお読みください。<br>
+                    操作方法は、基本的にマスをクリックし、選択したマスの番号をキーボードから打ち込むことになります。<br>
+                    入力した番号は0とbackspaceで消去できます。<br>
+                    スペースキーで中央のマスを選択し、矢印キーで選択するマスを変更することも可能です。<br>
+                    その他ショートカットキーは本体のボタン等に記載してあります。<br>
+                </p>
+                <h2>VERSION</h2>
+                <h3>v1.0</h3>
+                <p>
+                    最初のpublic releaseとなります。<br>
+                    ナンバープレースの問題を生成し、生成完了からプレイヤーが答え合わせボタンをクリックするまでの時間を秒単位測るタイマーも実装しています。<br>
+                    また、無制限のUndo/Redo機能や、初心者に嬉しい重複を許さない範囲のハイライト機能も実装しました。<br>
+                    ベストタイムの保存は、レジストリを汚したくないとの思いと、QtとJSON、iniファイル周りの私の理解不足のため実装できていません。<br>
+                </p>
+                <h2>ALGORITHM</h2>
+                <p>
+                    以下のようなラスベガス法の一種ともいえそうな確率的アルゴリズムを用いています。<br>
+                    &nbsp;1.まず乱数とバックトラッキング(深さ優先探索)を用いて完成した盤面を生成する<br>
+                    &nbsp;2.指定されたヒント数に応じてランダムにマスを空欄にしていき問題を生成する<br>
+                    &nbsp;3.生成された問題の答えが一意に定まっているか、バックトラッキングを数字の小さい順と大きい順からそれぞれ行い、一致するかどうかで判定する。<br>
+                    &nbsp;4.解答が一意定まるまで2,3を繰り返す<br>
+                    このようなアルゴリズムのため、ヒントの数を25より少なくすると問題の生成に極端に時間が掛かってしまいます。<br>
+                    最低値に設定してある25個のヒントでも、1秒未満で生成できることもあれば3分以上かかることもあります。<br>
+                    これはこのアルゴリズムの深刻な課題なので、今後マルチスレッドを用いて気にならない程度に生成時間を削ることを目標とします。<br>
+                    (人工知能で一瞬で生成してしまう技術もあるようですが、AIに関して勉強不足な上、そもそもナンバープレース作りを通してQtやC++を勉強したかったというのがあります)
+                </p>
+                <h2>SOURCE</h2>
+                <p><a href="https://github.com/Lucotecia/Quick_Number_Place/">GitHub</a>にあります。</p>
+            </main>
+            <footer>
+                <p>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw&url=https://lucotecia.github.io/My_Pages/works/qnp.html"
+                        class="twitter-share-button" data-show-count="false">
+                        Tweet
+                    </a>
+                </p>
+                <hr>
+                <p>Copyright &copy; 2019 Lucotecia.</p>
+            </footer>
+        </div>
+    </body>
+</html>
