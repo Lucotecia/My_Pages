@@ -53,3 +53,10 @@ a:active {
 .enumeration {
     margin: 40px;
 }
+
+.breadcrumb {
+    font-size: 12px;
+    margin: 0px;
+    border : 0px;
+    padding: 0px;
+}
